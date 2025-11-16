@@ -11,9 +11,7 @@ namespace Projekt
         public string Title { get; }
         public string Description { get; }
 
-        public IReadOnlyList<Question> Questions => _questions.AsReadOnly();
 
-        private readonly List<Question> _questions = new List<Question>();
 
         public Quiz(string title, string description = "")
         {
